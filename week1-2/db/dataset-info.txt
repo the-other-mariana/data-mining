@@ -1,0 +1,14 @@
+journalists: https://github.com/ali-ce/datasets/tree/master/Journalists-Killed-since-1992
+https://cpj.org/data/killed/?status=Killed&motiveConfirmed%5B%5D=Confirmed&type%5B%5D=Journalist&start_year=1992&end_year=2021&group_by=year
+
+heart: https://www.kaggle.com/ronitf/heart-disease-uci
+
+heart_failure: https://www.kaggle.com/andrewmvd/heart-failure-clinical-data
+
+data (breast cancer): https://www.kaggle.com/uciml/breast-cancer-wisconsin-data
+
+ploiceKillingsUS: https://www.kaggle.com/kwullum/fatal-police-shootings-in-the-us?select=PoliceKillingsUS.csv
+
+dataset 2: https://github.com/ali-ce/datasets/tree/master/Starbucks
+
+alzheimers: https://www.kaggle.com/brsdincer/alzheimer-features
