@@ -108,6 +108,44 @@ A density curve is a graph that shows probability. The area under the curve is e
 
 ![img](https://github.com/the-other-mariana/data-mining/blob/master/week3/res/10.png?raw=true)
 
+## Scatter Matrix
+
+A scatter plot matrix is ​​a grid (or matrix) of scatter plots that is used to visualize bivariate relationships between combinations of variables. Each scatter plot in the matrix shows the relationship between a pair of variables.
+
+- It is common among data science tasks to understand the relation between two variables.We mostly use the correlation to understand the relation between two variables. But often we also hear about scatter matrix (also scatter plot) and covariance too.
+
+- A scatter matrix is a estimation of covariance matrix when covariance cannot be calculated or costly to calculate.
+
+    - The **covariance** is defined as the measure of the joint variability of two random variables.
+
+- A scatter matrix consists of several pair-wise scatter plots of variables presented in a matrix format. It can be used to determine whether the variables are correlated and whether the correlation is positive or negative.
+
+-  In other words, scatter plot matrix represents bi-variate or pairwise relationship between different combinations of variables while laying them in grid form.
+
+![img](https://github.com/the-other-mariana/data-mining/blob/master/week3/res/scatter-matrix.png?raw=true)
+
+- The diagonal shows the distribution of the three numeric variables of our example data.
+
+- In the other cells of the plot matrix, we have the scatterplots (i.e. correlation plot) of each variable combination of our dataframe.
+
+If we were to draw one by hand, we decide which pair of variables to do: then, we also need to specify which of the paired variables will be our independent (x axis) and dependent (y axis) variables. Then, we plot for each x axis value (x variable value) its corresponding y axis value (y variable value on the same row). At the end, maybe you can spot a tendency: positive/negative, linear/non-linear.
+
+![img](https://github.com/the-other-mariana/data-mining/blob/master/week3/res/scatter-plot.png?raw=true)
+
+### Correlation
+
+The correlation matrix gives us the information about how the two variables interact, both the direction and magnitude. The commonly used covariance is based on the Pearson correlation coefficient.
+
+    - The way we compute the correlation matrix is by dividing the covariance values of two variables by product of the standard deviation of two variables.
+
+### Usage
+
+- Use scatter plot matrix or pairplot for assessing pairwise or bi-variate relationship between different predictor variables
+
+- Use scatter plot matrix or pairplot for analyzing the multicollinearity between predictor variables
+
+- Use scatter plot matrix or pairplot for assessing whether the data is linearly separable or otherwise.
+
 ## Handy Links
 
 - https://towardsdatascience.com/understanding-boxplots-5e2df7bcbd51
