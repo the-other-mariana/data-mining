@@ -102,7 +102,7 @@ A density plot is a smoothed, continuous version of a histogram estimated from t
 
 ![img](https://github.com/the-other-mariana/data-mining/blob/master/week3/res/11.PNG?raw=true)
 
-A density curve is a graph that shows probability. The area under the curve is equal to 100 percent of all probabilities.
+*A density curve is a graph that shows probability. The area under the curve is equal to 100 percent of all probabilities.*
 
 ## A Rule
 
