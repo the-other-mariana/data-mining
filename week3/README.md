@@ -112,13 +112,11 @@ A density plot is a smoothed, continuous version of a histogram estimated from t
 
 A scatter plot matrix is ​​a grid (or matrix) of scatter plots that is used to visualize bivariate relationships between combinations of variables. Each scatter plot in the matrix shows the relationship between a pair of variables.
 
-- It is common among data science tasks to understand the relation between two variables.We mostly use the correlation to understand the relation between two variables. But often we also hear about scatter matrix (also scatter plot) and covariance too.
-
 - A scatter matrix is a estimation of covariance matrix when covariance cannot be calculated or costly to calculate.
 
     - The **covariance** is defined as the measure of the joint variability of two random variables.
 
-- A scatter matrix consists of several pair-wise scatter plots of variables presented in a matrix format. It can be used to determine whether the variables are correlated and whether the **correlation** is positive or negative.
+- It can be used to determine whether the variables are correlated and whether the **correlation** is positive or negative.
 
 -  In other words, scatter plot matrix represents bi-variate or pairwise relationship between different combinations of variables while laying them in grid form.
 
