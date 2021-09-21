@@ -118,7 +118,7 @@ A scatter plot matrix is ​​a grid (or matrix) of scatter plots that is used 
 
     - The **covariance** is defined as the measure of the joint variability of two random variables.
 
-- A scatter matrix consists of several pair-wise scatter plots of variables presented in a matrix format. It can be used to determine whether the variables are correlated and whether the correlation is positive or negative.
+- A scatter matrix consists of several pair-wise scatter plots of variables presented in a matrix format. It can be used to determine whether the variables are correlated and whether the **correlation** is positive or negative.
 
 -  In other words, scatter plot matrix represents bi-variate or pairwise relationship between different combinations of variables while laying them in grid form.
 
@@ -136,7 +136,7 @@ If we were to draw one by hand, we decide which pair of variables to do: then, w
 
 The correlation matrix gives us the information about how the two variables interact, both the direction and magnitude. The commonly used covariance is based on the Pearson correlation coefficient.
 
-    - The way we compute the correlation matrix is by dividing the covariance values of two variables by product of the standard deviation of two variables.
+The way we compute the correlation matrix is by dividing the covariance values of two variables by product of the standard deviation of two variables.
 
 ### Usage
 
