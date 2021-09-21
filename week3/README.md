@@ -2,13 +2,13 @@
 
 ## Box Plots
 
-
+![img](https://github.com/the-other-mariana/data-mining/blob/master/week3/res/box-plot-parts.png?raw=true)
 
 - A boxplot is a standardized way of displaying the distribution of data, or the variability of data (when spread out in order).
 
 - It can also tell you if your data is symmetrical, how tightly your data is grouped, and if and how your data is skewed.
 
-
+![img](https://github.com/the-other-mariana/data-mining/blob/master/week3/res/02.png?raw=true)
 
 - Use a box plot when you need to have information on the variability or dispersion of the data. A boxplot is a graph that gives you a good indication of how the values in the data are spread out.
 
@@ -28,6 +28,7 @@
 
 ## Box Plot Explained vs. PDF
 
+![img](https://github.com/the-other-mariana/data-mining/blob/master/week3/res/03.png?raw=true)
 
 - **Probability Density Function**: A PDF is used to specify the probability of the random variable falling within a particular range of values, as opposed to taking on any one value. This probability is given by the integral of this variable’s PDF over that range.
 
@@ -35,19 +36,21 @@
 
 ## Example
 
+![img](https://github.com/the-other-mariana/data-mining/blob/master/week3/res/04.png?raw=true)
 
 - Using the graph, we can compare the range and distribution of the area_mean for malignant and benign diagnosis. We observe that there is a greater variability for malignant tumor area_mean as well as larger outliers.
 
-- Also, since the notches in the boxplots do not overlap, you can conclude that with 95% confidence, that the true medians do differ.
+- Also, since the notches in the boxplots do not overlap (the medians), you can conclude that with 95% confidence, that the true medians do differ.
 
 ## Interpretation
 
 The five-number summary divides the data into sections that each contain approximately 25% percent of the data in that set.
 
+![img](https://github.com/the-other-mariana/data-mining/blob/master/week3/res/05.png?raw=true)
 
 ### About what percent of the boxes of raisins weighed more than 29 grams?
 
-
+![img](https://github.com/the-other-mariana/data-mining/blob/master/week3/res/06.PNG?raw=true)
 
 - Since Q_1 = 29, about 25% of the data is lower than 29 and about 75% is above 29. About 75% percent of the boxes of raisins weighed more than 29 grams.
 
@@ -65,7 +68,7 @@ A histogram divides the variable into bins, counts the data points in each bin, 
 
 It fails in readability issues when we want to compare the distributions of one variable across multiple categories. (if we want to compare arrival delay distributions between airlines)
 
-
+![img](https://github.com/the-other-mariana/data-mining/blob/master/week3/res/07.png?raw=true)
 
 ### Density Plot
 
@@ -73,6 +76,7 @@ A density plot is a smoothed, continuous version of a histogram estimated from t
 
 - The most common form of estimation is known as kernel density estimation: a continuous curve (the kernel) is drawn at every individual data point and all of these curves are then added together to make a single smooth density estimation. The kernel most often used is a Gaussian (which produces a Gaussian bell curve at each data point).
 
+![img](https://github.com/the-other-mariana/data-mining/blob/master/week3/res/08.png?raw=true)
 
 - The y-axis in a density plot is the probability density function. However, we need to be careful to specify this is a *probability density* and not a *probability*. The difference is the **probability density is the probability per unit on the x-axis.**
 
@@ -88,6 +92,7 @@ A density plot is a smoothed, continuous version of a histogram estimated from t
 
     - **Mean**: The balancing point of the curve, if it were a solid mass.
 
+![img](https://github.com/the-other-mariana/data-mining/blob/master/week3/res/09.PNG?raw=true)
 
 *Note*
 
@@ -95,11 +100,13 @@ A density plot is a smoothed, continuous version of a histogram estimated from t
 
 - The mean of a skewed curve is pulled away from the median in the direction of the long tail.
 
+![img](https://github.com/the-other-mariana/data-mining/blob/master/week3/res/11.PNG?raw=true)
+
 A density curve is a graph that shows probability. The area under the curve is equal to 100 percent of all probabilities.
 
 ## A Rule
 
-
+![img](https://github.com/the-other-mariana/data-mining/blob/master/week3/res/10.png?raw=true)
 
 ## Handy Links
 
