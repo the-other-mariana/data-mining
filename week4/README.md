@@ -1,6 +1,6 @@
 # Notes
 
-
+![img](https://github.com/the-other-mariana/data-mining/blob/master/week4/res/01.png?raw=true)
 
 We can see in this plot that the diagonal has plots that describe a straight line. This happens because the pair plots are describing the relationship between **all** combinations of attributes, and eventually there is a combination of an attribute against itself. When this happens, both the x axis and y axis coordinates are given by **the same** column. So for example, an instance at attribute 1 has a 3 in x axis and a 3 in y axis, and therefore **when you compare an attribute against itself in a pair plot, a straight line (y = x) is shown**.
 
@@ -20,7 +20,7 @@ plt.plot(x, x);
 
 we would be getting the following.
 
-
+![img](https://github.com/the-other-mariana/data-mining/blob/master/week4/res/02.png?raw=true)
 
 By default, the format that seaborn takes as diagonal is the **density** of the data, which is generated if we run:
 
@@ -28,6 +28,7 @@ By default, the format that seaborn takes as diagonal is the **density** of the 
 sea.pairplot(data, hue='class') 
 ```
 
+![img](https://github.com/the-other-mariana/data-mining/blob/master/week4/res/03.png?raw=true)
 
 Whereas we put:
 
@@ -43,7 +44,7 @@ sea.pairplot(data, hue='class', diag_kind='hist')
 
 And we would be seeing the diagonal show the separate histograms of the data.
 
-
+![img](https://github.com/the-other-mariana/data-mining/blob/master/week4/res/04.png?raw=true)
 
 In general, we are seeing two coloured scatter plots because they are being divided into the corresponding value of the **class** column. That is, the paired data point that corresponds to a 0 is painted in one color and the ones who correspond to 1 in another color.
 
@@ -69,7 +70,7 @@ Range col 1: 1 - 8
 
 Range col 2: 85 - 148
 
-
+![img](https://github.com/the-other-mariana/data-mining/blob/master/week4/res/05.png?raw=true)
 
 - This would be ideal because in the case of **new data**, if this new point lies in the blue area (considering both x's and y's), and if we are using a classification model, we would certainly know to which class it belongs to (0 or 1, in this case). 
 
@@ -89,11 +90,11 @@ plt.subplot(4, 2, 1)
 
 we are referring to a grid such as:
 
-
+![img](https://github.com/the-other-mariana/data-mining/blob/master/week4/res/06.png?raw=true)
 
 We are plotting the box plot of each class that is in each attribute. In this case we start with the first column (Sepal.length) and with respect to its class we will do the box plot.
 
-
+![img](https://github.com/the-other-mariana/data-mining/blob/master/week4/res/07.png?raw=true)
 
 ### What can we say about these plots?
 
@@ -147,7 +148,7 @@ Where the first three instances of the two columns generate the first box plot, 
 
 - Thus, ideally what would be a model for this problem? Boxes arranged like below:
 
-
+![img](https://github.com/the-other-mariana/data-mining/blob/master/week4/res/08.png?raw=true)
 
 *Note: we could have the whiskers anywhere, but the density (box) is the important. They would ideally be like above.*
 
@@ -160,3 +161,7 @@ Where the first three instances of the two columns generate the first box plot, 
     - Boxes are exactly in the same range. This would not be a characteristic that can predict to which class it belongs to. In data cleaning, maybe this could be a column that we could delete.
 
 - Thus, **the relationship between attributes, can help to have a better prediction**. We saw the pair plots to see if we could achieve a good prediction (in classificiation problems) taking 2 columns, or the box plots to see if we could achieve a good prediction (in classificiation problems) taking 1 column.
+
+### Plots 4,2,3 and 4,2,4
+
+- Petal length and petal width are **highly correlated** and this can be seen because if we put plot 3 over plot 4, their boxes are almost exactly at the **same positions**. This also tells us that maybe we can erase one of the two columns, because a new data point that falls into one box of one plot (3), the data point will also fall on the same box but of the other plot (4).
