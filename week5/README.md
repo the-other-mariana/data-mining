@@ -129,6 +129,10 @@ Transformations that try to shape the data values as a normal distribution:
 
 These two have a coefficient called **lambda**, which normally receives values in the range [-1, 1], and this coefficient modifies the transformation (either of the two) in order to change and adjust the shape of the gaussian result. We are trying to change the distribution of attributes in order to reach a distribution similar to the normal distribution, so that these attributes can be a proper input for a ML algorithm (Linear Regression). After this transformation, the correlation coefficient can change, therefore it is advised to check the correlation in raw data.
 
+Using the box-cox method, the plot below shows how the distribution changes as the lambda for **pedigree** and **age** change by a constant increment that will take these parameters from -1 to 1.
+
+![img](https://github.com/the-other-mariana/data-mining/blob/master/week5/res/lambdas.png?raw=true)
+
 ## Handy Links
 
 - https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html
