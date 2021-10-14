@@ -41,7 +41,7 @@ np.sqrt(np.sum(X**2, axis=1))
 
 Or simply:
 
-![img](norml1l2)
+![img](https://github.com/the-other-mariana/data-mining/blob/master/week5/norml1l2.png?raw=true)
 
 Thus, L2 norm applies the following:
 
