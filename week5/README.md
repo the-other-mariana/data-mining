@@ -83,7 +83,7 @@ Now if we apply a Standardization, the numerical features are now centered on th
 
 Now let's compare both methods visually
 
-![img](https://github.com/the-other-mariana/data-mining/blob/master/week5/res/norm-stand02.png?raw=true)
+![img](https://github.com/the-other-mariana/data-mining/blob/master/week5/res/norm-stand03.png?raw=true)
 
 ### Quick Example
 
