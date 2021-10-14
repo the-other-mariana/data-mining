@@ -67,7 +67,7 @@ Due to the nature of this formula (squared terms), the atypical values affect si
 
 Standardization, aka z-score normalization, is another scaling technique where the values are **centered around the mean** with a **unit standard deviation**. When it is applied the features will be rescaled so that they’ll have the properties of a standard normal distribution with mean = 0 and std deviation = 1 (standard deviation from the mean/average), also known as unit variation, and thus, the same scale. This formula (above) scales the features in a way that they range between [-1,1].
 
-![img](https://github.com/the-other-mariana/data-mining/blob/master/week5/res/03.png?raw=true)
+![img](https://github.com/the-other-mariana/data-mining/blob/master/week5/res/03-02.png?raw=true)
 
 Normalization is a scaling technique in which values are shifted and rescaled so that they end up ranging between 0 and 1. It is also known as Min-Max scaling. 
 
@@ -83,7 +83,7 @@ Now if we apply a Standardization, the numerical features are now centered on th
 
 Now let's compare both methods visually
 
-![img](https://github.com/the-other-mariana/data-mining/blob/master/week5/res/norm-stand03.png?raw=true)
+![img](https://github.com/the-other-mariana/data-mining/blob/master/week5/res/norm-stand04.png?raw=true)
 
 ### Quick Example
 
