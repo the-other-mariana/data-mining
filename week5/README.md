@@ -41,7 +41,7 @@ np.sqrt(np.sum(X**2, axis=1))
 
 Or simply:
 
-![img](https://github.com/the-other-mariana/data-mining/blob/master/week5/norml1l2.png?raw=true)
+![img](https://github.com/the-other-mariana/data-mining/blob/master/week5/res/norml1l2.png?raw=true)
 
 Thus, L2 norm applies the following:
 
@@ -73,7 +73,7 @@ The concept of **feature scaling**, which is a crucial part of the data preproce
 
 Standardization, aka z-score normalization, is another scaling technique where the values are **centered around the mean** with a **unit standard deviation**. When it is applied the features will be rescaled so that they’ll have the properties of a standard normal distribution with mean = 0 and std deviation = 1 (standard deviation from the mean/average), also known as unit variation, and thus, the same scale. This formula (above) scales the features in a way that they range between [-1,1].
 
-![img](03)
+![img](https://github.com/the-other-mariana/data-mining/blob/master/week5/res/03.png?raw=true)
 
 Normalization is a scaling technique in which values are shifted and rescaled so that they end up ranging between 0 and 1. It is also known as Min-Max scaling. 
 
@@ -85,11 +85,11 @@ If you have categorical or binary features, do not use Standardization. Normaliz
 
 Now if we apply a Standardization, the numerical features are now centered on the mean with a unit standard deviation. 
 
-![img](02)
+![img](https://github.com/the-other-mariana/data-mining/blob/master/week5/res/02.png?raw=true)
 
 Now let's compare both methods visually
 
-![img](norm-stand)
+![img](https://github.com/the-other-mariana/data-mining/blob/master/week5/res/norm-stand.png?raw=true)
 
 ### Quick Example
 
@@ -101,7 +101,7 @@ Now let's compare both methods visually
 
 Standardization's context is based on those problems that require us to use a Gaussian representation. What is a Gaussian representation?
 
-![img](04)
+![img](https://github.com/the-other-mariana/data-mining/blob/master/week5/res/04.png?raw=true)
 
 ## Interpretations
 
@@ -113,11 +113,11 @@ In **normalization L2** technique, we use the as sample the **row** of a dataset
 
 We can expect the following skews when we have a gaussian distribution:
 
-![img](06)
+![img](https://github.com/the-other-mariana/data-mining/blob/master/week5/res/06.png?raw=true)
 
 This is seen in the **pedi** and **age** density plots.
 
-![img](07)
+![img](https://github.com/the-other-mariana/data-mining/blob/master/week5/res/07.png?raw=true)
 
 ### Power Transformer
 
