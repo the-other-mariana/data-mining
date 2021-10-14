@@ -101,7 +101,7 @@ Now let's compare both methods visually
 
 Standardization's context is based on those problems that require us to use a Gaussian representation. What is a Gaussian representation?
 
-![img](https://github.com/the-other-mariana/data-mining/blob/master/week5/res/04.png?raw=true)
+![img](https://github.com/the-other-mariana/data-mining/blob/master/week5/res/04.jpg?raw=true)
 
 ## Interpretations
 
