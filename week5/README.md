@@ -133,6 +133,8 @@ Using the box-cox method, the plot below shows how the distribution changes as t
 
 ![img](https://github.com/the-other-mariana/data-mining/blob/master/week5/res/lambdas.png?raw=true)
 
+*Note: in the above image, we modified or over wrote the lambda fitted by the algorithm itself, just for visualization purposes. The fitted lambda by default when using the algorithm is supposed to be the best value in order for the feature to look like a normal distribution.*
+
 ## Handy Links
 
 - https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html
