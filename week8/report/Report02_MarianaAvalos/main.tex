@@ -451,7 +451,11 @@ Now we can easily conclude that, throughout every validation method, the lowest 
 Nevertheless, the accuracy in prediction using all these methods is quite high in general, surrounding the values of 87\%-94\%. This might look as too high even, and most probably will appear as an over-trained model when new input data is provided outside of the provided database and the accuracy decreases. I could be mistaken however, and the new input data set might as well result in similar accuracy levels, meaning that the model was not over-trained but actually extremely precise, which could be the case since Kaggle's data sets are very curated and maintained.
 \\
 
+The most notorious outcome of this method comparison seen in Figure \ref{fig:bars} is how the \textbf{Standardization of raw data increased significantly the prediction accuracy of a model while reducing the convergence time}, compared to the model adjusted to raw data. This is due to the fact that raw data has \textbf{attribute ranges that differ greatly from other attributes'}, which \textbf{increases the searching space for the Machine Leraning model applied}, making the iterative method take longer to converge to the optimized solution. After Standardization of data, \textbf{the ranges of all attributes are similar, and thus the searching space is reduced, which makes the iterative method converge faster and all attributes have an equal influence on the model calculation}.
+\\
+
 However, one thing that indeed surprises is the accuracy level with a Standard and Yeo-Johnson transformation: the purely Standardized data set decreases the computation time in all methods compared to the method applied with raw data, but with a Standard and Yeo-Johnson transformation the accuracy is increased compared to raw data but decreased compared to only Standardized data. This is surprising because, in theory, Machine Learning algorithms such as Logistic Regression actually expect data centered in $\mu = 0$ and $\sigma = 1$ (Standardized) and that resembles a Gaussian Bell distribution, which is exactly what Yeo-Johnson's method does to data. But why is the accuracy not the highest with this two transforms that deliver data as expected by Logistic Regression? Let's look at Figure \ref{fig:lambdas}.
+\\
 
 \begin{figure}[!ht]
 \centering
