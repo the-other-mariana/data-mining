@@ -28,7 +28,7 @@ In the case of a predictive model like binary classification, we would have an o
 
 And the confusion matrix would be:
 
-![img](1)
+![img](https://github.com/the-other-mariana/data-mining/blob/master/week9/res/1.png?raw=true)
 
 If we take on account that:
 
@@ -38,7 +38,7 @@ If we take on account that:
 
 We assign a name to each cell of this matrix:
 
-![img](2)
+![img](https://github.com/the-other-mariana/data-mining/blob/master/week9/res/2.png?raw=true)
 
 - True Positive (TP): where both Real and Predicted coincide for 1's (Positives).
 
@@ -50,7 +50,7 @@ We assign a name to each cell of this matrix:
 
 Which would look like in a distribution form:
 
-![img](3)
+![img](https://github.com/the-other-mariana/data-mining/blob/master/week9/res/3.png?raw=true)
 
 *Note: if you check in your database how many entries belong to class 0 and class 1, you should have a balance from 50%/50% to 66%/33% as the acceptable balance in order to decide if your db is apt for this technique or you should ditch it.*
 
@@ -66,7 +66,7 @@ In the example of the table here, the sum of all cells is 9 because we have 9 en
 
 We can compute **accuracy** with the confusion matrix by:
 
-![img](4)
+![img](https://github.com/the-other-mariana/data-mining/blob/master/week9/res/4.png?raw=true)
 
 But we can compute another metric, called **Kappa Agreement Index** (Índice de Concordancia de Kappa), that oscilates the range of [-1, 1]:
 
@@ -78,11 +78,11 @@ But we can compute another metric, called **Kappa Agreement Index** (Índice de 
 
 Where if k = 1 there is perfect agreement and k =< 0 there is no agreement.
 
-![img](5)
+![img](https://github.com/the-other-mariana/data-mining/blob/master/week9/res/5.png?raw=true)
 
 Now we can say that kappa = 0.468, which in a range of [-1, 1] we have almost a 50% agreement, which by looking at the table below we can say that it is a 'Moderate' model by **a metric that takes on account separate classes' prediction and also random guesses.**
 
-![img](6)
+![img](https://github.com/the-other-mariana/data-mining/blob/master/week9/res/6.png?raw=true)
 
 If you have a good accuracy prediction percentage and balanced classes, the kappa index increases.
 
