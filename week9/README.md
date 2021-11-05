@@ -88,4 +88,57 @@ If you have a good accuracy prediction percentage and balanced classes, the kapp
 
 ## ROC Curve and AUC Metric
 
-To do
+After training a Machine Learning model for a classification problem, we need to evaluate how good it is, in order to decide whether to implement it or not. That's when AUC-ROC curve comes in.
+
+We are calculating the “Area Under the Curve” (AUC) of “Receiver Characteristic Operator” (ROC): AUC-ROC curve helps us visualize how well our machine learning classifier is performing, both for binary and multi-class classification.
+
+### Sensitivity and Specificity
+
+Taking on account the confusion matrix:
+
+![img](res/confusion-mtx.png)
+
+- Sensitivity
+
+![\Large \kappa=\frac{P_o-P_e}{1-P_e}](https://latex.codecogs.com/svg.latex?\Large&space;Sensitivity=\frac{TP}{TP+FN})
+
+Sensitivity tells us what proportion of the **positive class** (class 1) got **correctly** classified. For example, determining what proportion of the actual sick people were correctly detected by the model.
+
+- False Negative Rate
+
+![\Large \kappa=\frac{P_o-P_e}{1-P_e}](https://latex.codecogs.com/svg.latex?\Large&space;FNR=\frac{FN}{TP+FN})
+
+False Negative Rate (FNR) tells us what proportion of the **positive class** got **incorrectly** classified by the classifier.
+
+A higher TPR and a lower FNR is desirable since we want to correctly classify the positive class.
+
+- Specificity / True Negative Rate
+
+![\Large \kappa=\frac{P_o-P_e}{1-P_e}](https://latex.codecogs.com/svg.latex?\Large&space;Specificity=\frac{TN}{TN+FP})
+
+Specificity tells us what proportion of the **negative class** got **correctly** classified. Taking the same example as in Sensitivity, Specificity would mean determining the proportion of healthy people who were correctly identified by the model.
+
+- False Positive Rate
+
+![\Large \kappa=\frac{P_o-P_e}{1-P_e}](https://latex.codecogs.com/svg.latex?\Large&space;FPR=\frac{FP}{TN+FP}=1-Specificity)
+
+FPR tells us what proportion of the **negative class** got **incorrectly** classified by the classifier. A higher TNR and a lower FPR is desirable since we want to correctly classify the negative class.
+
+## What is the AUC-ROC curve?
+
+The **Receiver Operator Characteristic (ROC) curve** is an evaluation metric for binary classification problems. It is a probability curve that plots the **TPR** against **FPR** at various threshold values and essentially separates the *signal* from the *noise*. The **Area Under the Curve (AUC)** is the *measure of the ability* of a classifier to distinguish between classes and is used as a summary of the ROC curve.
+
+The **higher the AUC, the better** the performance of the model at distinguishing between the positive and negative classes.
+
+![img](res/7.png)
+
+| Plot a) | Plot b) | Plot c) |
+| ---- | ---- | ---- |
+| AUC = 1 | 0.5<AUC<1 | AUC=0.5 |
+| classifier is able to perfectly distinguish between all the Positive and the Negative class points correctly. If, however, the AUC had been 0, then the classifier would be predicting all Negatives as Positives, and all Positives as Negatives. | High chance that the classifier will be able to distinguish the positive class values from the negative class values | The classifier is not able to distinguish between Positive and Negative class points. Either the classifier is predicting random class or constant class for all the data points. |
+
+Thus, **the higher the AUC value for a classifier, the better its ability to distinguish between positive and negative classes.**.
+
+## Handy Links
+
+- [AUC ROC Metric](https://www.analyticsvidhya.com/blog/2020/06/auc-roc-curve-machine-learning/)
