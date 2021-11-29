@@ -49,3 +49,9 @@ Thus, when we have a new data point as input, we will define the position of the
 ![img](res/4.png)
 
 In Python, the node's first row is the question that represents the threshold, in this case 9.54. 339 samples enter the condition. Each level reduces the mse. The nodes are repeated because with this the samples are narrowed to subgroups of values of the same column that are more relevant the smaller or deeper they get.
+
+![img](res/5.png)
+
+## Handy Links
+
+- https://stackoverflow.com/questions/35064304/runtimeerror-make-sure-the-graphviz-executables-are-on-your-systems-path-aft
