@@ -112,7 +112,7 @@ In the second iteration, the objective will be to minimize the distance of the c
 
     - Distance between the centroids of the clusters.
 
-## Process
+### Process
 
 We start from as many clusters as the number of elements in the training set. In this case 5. We then start to unify the points based on the ones that have the closest distance.
 
@@ -182,7 +182,7 @@ Thus, we start the algorithm by finding all points that are **core objects**. In
 
 ![img](res/21.png)
 
-Thus, we attach the direclty reachable:
+Thus, we attach the directly reachable:
 
 ![img](res/22.png)
 
