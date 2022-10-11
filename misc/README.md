@@ -16,11 +16,11 @@ var graph = session.getGraph("MY_FIRST_GRAPH")
 select v, e from match (v)-[e]->() on MY_FIRST_GRAPH
 ```
 
-![img](./dsmBON93%20-%20graph-visualization.svg)
+![img](./graph.png)
 
 ```sql
 %pgql-pgx
 select c.NAME, c.POPULATION from match (c:City) on MY_FIRST_GRAPH order by c.POPULATION desc
 ```
 
-![img](./dsYakzXB%20-%20pie.svg)
+![img](./pie.png)
